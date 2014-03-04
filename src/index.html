@@ -1,83 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-	{{> head }}
-	<title>Mineocity Hosting</title>
+    {{> head }}
+    <title>Mineocity Hosting</title>
 </head>
 <body>
-	<div class="page-wrap">
-		{{> navigation }}
-        <div id="intro">
-            <div class="container">
-                <div class="col-md-6">
-                    <h1>Mineocity Hosting <small>Hosting done right, the first time</small></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis nunc quis ipsum lacinia, nec tempus est commodo. Vivamus placerat consequat ligula, sed dapibus arcu bibendum aliquam.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <a href="/plans" class="col-md-9 col-md-offset-3 intro-server">
-                            Powerful, reliable, and starting at <b>$5.00<small>/mo</small></b>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="page-wrap">
+    {{> navigation }}
+    <div id="intro">
         <div class="container">
-            <div class="col-md-4">
-                <div class="feature">
-                    <h2>Powerful Hardware</h2>
-                    <div class="icon icon-hardware"></div>
-                    <p>Our physical servers are built with parts from only the best manufacturers. Our servers are all hosted in top notch data-centers so your server is immune to natural disasters and power outages.</p>
-                </div>
+            <div class="col-md-6">
+                <h1>Mineocity Hosting
+                    <small>Hosting done right, the first time</small>
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis nunc quis ipsum lacinia,
+                    nec tempus est commodo. Vivamus placerat consequat ligula, sed dapibus arcu bibendum aliquam.</p>
             </div>
-            <div class="col-md-4">
-                <div class="feature">
-                    <h2>Helpful Support</h2>
-                    <div class="icon icon-support"></div>
-                    <p>Our support team works tirelessly 24 hours a day, 7 days a week. We train our staff to understand the ins and out of each product we host so that they can help you with any problems you may encounter.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature">
-                    <h2>Affordable Prices</h2>
-                    <div class="icon icon-prices"></div>
-                    <p>Our pricing is made to be competitive, even compared the budget providers who cut corners. Since we order our servers in volume we dont need to cut corners just to save you a few bucks.</p>
-                </div>
-            </div>
-        </div>
-        <div class="orange-banner">
-            <div class="container stats">
-                <div class="col-md-6">
-                    <b>1.6 Million</b> Players Served
-                </div>
-                <div class="col-md-6">
-                    Active Mineocity Servers <b>998</b> 
-                </div>
-                <div class="col-md-6">
-                    <b>15 Thousand</b> Slots available
-                </div>
-                <div class="col-md-6">
-                    Active Gigabytes of RAM <b>1076</b> 
-                </div>
-            </div>
-        </div>
-        <div id="location-map">
-            {{#home.locations}}
-                <div class="location" style="margin: {{top}} 0 0 {{left}}"></div>
-            {{/home.location}}
-        </div>
-        <div class="container">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="row">
-                    <a href="/plans" class="btn btn-primary btn-block col-md-12">Check Out Our Plans</a>
-                    <a href="http://panel.mineocityhosting.com" class="btn btn-default btn-block col-md-6">Minecraft CP</a>
-                    <a href="https://client.mineocityhosting.com/" class="btn btn-default btn-block col-md-6">Client Area</a>
-                    <a href="https://www.facebook.com/pages/Mineocity-Hosting/280773028715521" class="btn btn-facebook btn-block col-md-6">Facebook</a>
-                    <a href="https://twitter.com/mineocityhost" class="btn btn-twitter btn-block col-md-6">Twitter</a>
+                    <a href="/plans" class="col-md-9 col-md-offset-3 intro-server">
+                        Powerful, reliable, and starting at <b>$5.00
+                        <small>/mo</small>
+                    </b>
+                    </a>
                 </div>
             </div>
         </div>
-	</div>
-	{{> footer }}
+    </div>
+    <div class="container">
+        <div class="col-md-4">
+            <div class="feature">
+                <h2>Powerful Hardware</h2>
+
+                <div class="icon icon-hardware"></div>
+                <p>Our physical servers are built with parts from only the best manufacturers. Our servers are all
+                    hosted in top notch data-centers so your server is immune to natural disasters and power
+                    outages.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature">
+                <h2>Helpful Support</h2>
+
+                <div class="icon icon-support"></div>
+                <p>Our support team works tirelessly 24 hours a day, 7 days a week. We train our staff to understand the
+                    ins and out of each product we host so that they can help you with any problems you may
+                    encounter.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature">
+                <h2>Affordable Prices</h2>
+
+                <div class="icon icon-prices"></div>
+                <p>Our pricing is made to be competitive, even compared the budget providers who cut corners. Since we
+                    order our servers in volume we dont need to cut corners just to save you a few bucks.</p>
+            </div>
+        </div>
+    </div>
+    <div class="orange-banner">
+        <div class="container stats">
+            <div class="col-md-6">
+                <b>1.6 Million</b> Players Served
+            </div>
+            <div class="col-md-6">
+                Active Mineocity Servers <b>998</b>
+            </div>
+            <div class="col-md-6">
+                <b>15 Thousand</b> Slots available
+            </div>
+            <div class="col-md-6">
+                Active Gigabytes of RAM <b>1076</b>
+            </div>
+        </div>
+    </div>
+    <div id="location-map">
+        {{#home.locations}}
+        <div class="location" style="margin: {{top}} 0 0 {{left}}"></div>
+        {{/home.location}}
+    </div>
+    <div class="container">
+        <div class="col-md-4">
+            <div class="row">
+                <a href="/plans" class="btn btn-primary btn-block col-md-12">Check Out Our Plans</a>
+                <a href="http://panel.mineocityhosting.com" class="btn btn-default btn-block col-md-6">Minecraft CP</a>
+                <a href="https://client.mineocityhosting.com/" class="btn btn-default btn-block col-md-6">Client
+                    Area</a>
+                <a href="https://www.facebook.com/pages/Mineocity-Hosting/280773028715521"
+                   class="btn btn-facebook btn-block col-md-6">Facebook</a>
+                <a href="https://twitter.com/mineocityhost" class="btn btn-twitter btn-block col-md-6">Twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer }}
 </body>
 </html>
