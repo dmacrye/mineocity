@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.0.2",
-    "Elusive-Iconfont": "https://github.com/aristath/elusive-iconfont.git"
+    "bootstrap": "~3.0.2"
   }
 }

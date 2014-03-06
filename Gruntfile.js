@@ -15,13 +15,8 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src',
-          src: ['**/*.{jpg,ico}'],
+          src: ['**/*.{jpg,ico,eot,svg,ttf,woff}'],
           dest: 'dist'
-        }, {
-          expand: true,
-          cwd: 'bower_components/Elusive-Iconfont/fonts/',
-          src: ['**'],
-          dest: 'dist/font'
         }]
       }
     },
@@ -51,7 +46,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'src/css',
-          src: ['*.less'],
+          src: ['style.less'],
           dest: 'dist/css',
           ext: '.css'
         }]
