@@ -34,6 +34,9 @@ module.exports = function(grunt) {
           src: ['*.js'],
           dest: 'dist/js',
           ext: '.js'
+        }, {
+          src: 'bower_components/instantclick/instantclick.js',
+          dest: 'dist/js/instantclick.js'
         }]
       }
     },
