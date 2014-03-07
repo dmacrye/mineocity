@@ -63,6 +63,28 @@
 
 @btn-default-bg: #f0f0f0;
 
+@arrow-width: 400px;
+@arrow-height: 30px;
+
+.section-arrow(@color; @width: @arrow-width; @height: @arrow-height) {
+  border-top: @height solid @color;
+  border-right: (@width * 0.5) solid transparent;
+  border-left: (@width * 0.5) solid transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.section-arrow-after(@color; @width: @arrow-width; @height: @arrow-height) {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -(@width * 0.5);
+  bottom: -@height;
+  z-index: 10;
+  .section-arrow(@color; @width; @height);
+}
+
 html, body {
   height: 100%;
 }
@@ -93,6 +115,17 @@ a {
 
 #page-navigation {
   margin: 5px 0;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -(@arrow-width * 0.5);
+    bottom: -@arrow-height;
+    z-index: 10;
+    .section-arrow(#fff);
+  }
 
   .navbar-brand {
     background: url('../img/logo.png') center center no-repeat;
@@ -241,12 +274,24 @@ footer {
 .orange-banner {
   background: @brand-primary;
   color: #fff;
-  padding: 20px 0;
 }
 
 .stats {
   font-size: 1.5em;
   line-height: 3.5em;
+  position: relative;
+  padding: 20px 0;
+
+  &:before {
+    .section-arrow-after(#fff);
+    top: 0px;
+    bottom: inherit;
+  }
+
+  &:after {
+    .section-arrow-after(@brand-primary);
+    z-index: 1000;
+  }
 
   b {
     font-family: @headings-font-family;
@@ -269,6 +314,7 @@ footer {
   background: #f0f0f0;
   position: relative;
   padding: 20px 0;
+  margin-bottom: @arrow-height;
 
   @bar-height: 52px;
   @bar-top: 207px;
@@ -276,6 +322,10 @@ footer {
   img {
     position: relative;
     z-index: 10;
+  }
+
+  &:after {
+    .section-arrow-after(#f0f0f0);
   }
 
   &:before {
