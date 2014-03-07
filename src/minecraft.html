@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{> head }}
+    <title>Minecraft Plans - Mineocity Hosting</title>
+</head>
+<body>
+<div class="page-wrap">
+    {{> navigation }}
+    <h1 id="page-title" class="orange-banner">Minecraft Plans</h1>
+    <div class="row-dark arrow-compact">
+        <div class="container feature-large">
+            <h1>Included:</h1>
+            {{> features }}
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {{#minecraft.plans}}
+                <div class="col-md-3">
+                    <div class="plan">
+                        <img src="{{ baseUri }}/img/plans/{{ name }}.png" alt="{{ name }} Plan">
+                        <div class="item-shadow"></div>
+                        <h2>{{ name }} Plan</h2>
+                        <ul>
+                            <li class="focus">{{ ram }}MB RAM</li>
+                            <li class="focus">{{ slots }} Slots</li>
+                            <li>Multicraft Control Panel</li>
+                        </ul>
+                        <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ europe_link }}" class="btn btn-primary btn-block">Order Now (Europe)</a>
+                        <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ usa_link }}" class="btn btn-primary btn-block">Order Now (USA)</a>
+                    </div>
+                </div>
+            {{/minecraft.plans}}
+        </div>
+    </div>
+</div>
+{{> footer }}
+</body>
+</html>
