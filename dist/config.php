@@ -14,9 +14,7 @@ return array(
             array('name' => 'Cobblestone', 'ram' => 2048, 'slots' => 30, 'usa_link' => 2, 'europe_link' => 102),
             array('name' => 'Stone', 'ram' => 3072, 'slots' => 45, 'usa_link' => 3, 'europe_link' => 103),
             array('name' => 'Coal', 'ram' => 4096, 'slots' => 60, 'usa_link' => 4, 'europe_link' => 104),
-            array('name' => 'Iron', 'ram' => 5120, 'slots' => 100, 'usa_link' => 5, 'europe_link' => 105),
             array('name' => 'Redstone', 'ram' => 6144, 'slots' => 120, 'usa_link' => 6, 'europe_link' => 106),
-            array('name' => 'Gold', 'ram' => 7168, 'slots' => 140, 'usa_link' => 7, 'europe_link' => 107),
             array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'usa_link' => 8, 'europe_link' => 108)
         )
     )
