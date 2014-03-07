@@ -447,12 +447,24 @@ footer {
 
   img {
     width: 33%;
-    .animation(itembounce 6s cubic-bezier(.3,0,.7,1) infinite);
+    .translate(0px, -8px);
+
+    div:nth-child(3n+0) & {
+      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 0s infinite);
+    }
+
+    div:nth-child(3n+1) & {
+      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 2s infinite);
+    }
+
+    div:nth-child(3n+2) & {
+      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 4s infinite);
+    }
   }
 
   .item-shadow {
     height: 28px;
-    background: url('img/item-shadow.png') center center no-repeat;
+    background: url('../img/item-shadow.png') center center no-repeat;
     opacity: 0.25;
   }
 
