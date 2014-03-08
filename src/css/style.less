@@ -442,7 +442,7 @@ footer {
 .plan {
   .divided-columns();
 
-  img {
+  img.bounce {
     width: 33%;
     .translate(0px, -8px);
 
@@ -457,6 +457,14 @@ footer {
     div:nth-child(3n+2) & {
       .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 4s infinite);
     }
+  }
+
+  img.server {
+    vertical-align: middle;
+    max-width: 75%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border-radius: 3px;
   }
 
   .item-shadow {
@@ -482,6 +490,16 @@ footer {
 
   .focus {
     background: #fcfcfc;
+    font-weight: bold;
+  }
+
+  small {
+    display: block;
+    font-size: 0.8em;
+    color: #999;
+    line-height: 1em;
+    margin: 0 0 0.5em;
+    font-weight: normal;
   }
 }
 
@@ -502,7 +520,7 @@ footer {
     line-height: 1.7em;
 
     &:first-child {
-      margin-top: 1em;
+      margin-top: @arrow-height * 0.8;
     }
   }
 
