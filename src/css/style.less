@@ -10,14 +10,14 @@
   &:focus,
   &:active,
   &.active,
-  .open .dropdown-toggle& {
+  .open .dropdown-toggle & {
     color: @color;
     background-color: darken(@background, 8%);
     border-color: darken(@border, 12%);
   }
   &:active,
   &.active,
-  .open .dropdown-toggle& {
+  .open .dropdown-toggle & {
     background-image: none;
   }
   &.disabled,
@@ -42,9 +42,11 @@
 .btn-facebook {
   .button-variant(#fff; #3b5998; #3b5998);
 }
+
 .btn-twitter {
   .button-variant(#fff; #55acee; #55acee);
 }
+
 .btn-bb {
   margin-bottom: 8px;
 }
@@ -129,6 +131,13 @@ a {
 #page-navigation {
   margin: 5px 0;
 
+  .navbar-toggle {
+    width: 50px;
+    line-height: 0px;
+    font-size: 2em;
+    border: 1px solid #eee;
+  }
+
   &:after {
     display: block;
     content: "";
@@ -207,6 +216,7 @@ a {
     @border-radius: 10px;
     font-size: 1.5em;
     line-height: 2.5em;
+    display: block;
 
     #gradient.vertical(@brand-primary, #000);
     border-radius: @border-radius;
@@ -223,7 +233,6 @@ a {
       padding: 10px 0 120px;
       background: url('../img/intro-server.jpg') center bottom no-repeat #000;
       text-align: center;
-
 
       b {
         font-weight: normal;
@@ -423,21 +432,40 @@ footer {
 }
 
 @-webkit-keyframes itembounce {
-  0%   { .translate(0px, -8px); }
-  50%  { .translate(0px, 8px); }
-  100% { .translate(0px, -8px); }
-}
-@-moz-keyframes itembounce {
-  0%   { .translate(0px, -8px); }
-  50%  { .translate(0px, 8px); }
-  100% { .translate(0px, -8px); }
-}
-@keyframes itembounce {
-  0%   { .translate(0px, -8px); }
-  50%  { .translate(0px, 8px); }
-  100% { .translate(0px, -8px); }
+  0% {
+    .translate(0px, -8px);
+  }
+  50% {
+    .translate(0px, 8px);
+  }
+  100% {
+    .translate(0px, -8px);
+  }
 }
 
+@-moz-keyframes itembounce {
+  0% {
+    .translate(0px, -8px);
+  }
+  50% {
+    .translate(0px, 8px);
+  }
+  100% {
+    .translate(0px, -8px);
+  }
+}
+
+@keyframes itembounce {
+  0% {
+    .translate(0px, -8px);
+  }
+  50% {
+    .translate(0px, 8px);
+  }
+  100% {
+    .translate(0px, -8px);
+  }
+}
 
 .plan {
   .divided-columns();
@@ -447,15 +475,15 @@ footer {
     .translate(0px, -8px);
 
     div:nth-child(3n+0) & {
-      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 0s infinite);
+      .animation(itembounce 6s cubic-bezier(.3, 0, .7, 1) 0s infinite);
     }
 
     div:nth-child(3n+1) & {
-      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 2s infinite);
+      .animation(itembounce 6s cubic-bezier(.3, 0, .7, 1) 2s infinite);
     }
 
     div:nth-child(3n+2) & {
-      .animation(itembounce 6s cubic-bezier(.3,0,.7,1) 4s infinite);
+      .animation(itembounce 6s cubic-bezier(.3, 0, .7, 1) 4s infinite);
     }
   }
 
