@@ -8,6 +8,7 @@
 <div class="page-wrap">
     {{> navigation }}
     <h1 class="page-title orange-banner">Minecraft Plans</h1>
+
     <div class="row-dark arrow-compact">
         <div class="container feature-large">
             <h1>Included:</h1>
@@ -16,24 +17,49 @@
     </div>
     <div class="container">
         <div class="row">
+            <div class="col-md-6">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper ante in bibendum
+                        vestibulum. Suspendisse id lacinia magna. Interdum et malesuada fames ac ante ipsum primis in
+                        faucibus.</p>
+                    <small>Steve - CraftCraft Network</small>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper ante in bibendum
+                        vestibulum. Suspendisse id lacinia magna. Interdum et malesuada fames ac ante ipsum primis in
+                        faucibus.</p>
+                    <small>Steve - CraftCraft Network</small>
+                </blockquote>
+            </div>
+            <div class="col-md-12" style="text-align: center">
+                <a class="btn btn-default" href="/testimonials">More Testimonials</a>
+                <br>&nbsp;
+            </div>
             {{#minecraft.plans}}
-                <div class="col-md-3">
-                    <div class="plan">
-                        <img src="{{ baseUri }}/img/plans/{{ name }}.png" alt="{{ name }} Plan">
-                        <div class="item-shadow"></div>
-                        <h2>{{ name }} Plan</h2>
-                        <ul>
-                            <li class="focus">{{ ram }}MB RAM</li>
-                            <li class="focus">{{ slots }} Slots</li>
-                            <li>Multicraft Control Panel</li>
-                        </ul>
-                        <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ europe_link }}" class="btn btn-primary btn-block">Order Now (Europe)</a>
-                        <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ usa_link }}" class="btn btn-primary btn-block">Order Now (USA)</a>
-                    </div>
+            <div class="col-md-3">
+                <div class="plan">
+                    <img src="{{ baseUri }}/img/plans/{{ name }}.png" alt="{{ name }} Plan">
+
+                    <div class="item-shadow"></div>
+                    <h2>{{ name }} Plan</h2>
+                    <ul>
+                        <li class="focus">{{ ram }}MB RAM</li>
+                        <li class="focus">{{ slots }} Slots</li>
+                        <li>Multicraft Control Panel</li>
+                    </ul>
+                    <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ europe_link }}"
+                       class="btn btn-primary btn-block">Order Now (Europe)</a>
+                    <a href="https://client.mineocityhosting.com/cart.php?a=add&amp;pid={{ usa_link }}"
+                       class="btn btn-primary btn-block">Order Now (USA)</a>
                 </div>
+            </div>
             {{/minecraft.plans}}
         </div>
-        <h1>Test Us! <small>Try out these test IPs</small></h1>
+        <h1>Test Us!
+            <small>Try out these test IPs</small>
+        </h1>
         <div class="row">
             <div class="col-md-4">
                 <div class="ipbox" style="background-position: -170px -34px">
