@@ -85,6 +85,19 @@
   .section-arrow(@color; @width; @height);
 }
 
+.divided-columns(@border: #eee) {
+
+  border-right: 1px solid @border;
+  margin-right: @grid-gutter-width / -2;
+  padding-right: @grid-gutter-width / 2;
+  text-align: center;
+  margin-bottom: 20px;
+
+  div:last-child > & {
+    border-right: none;
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -93,7 +106,7 @@ html {
   overflow-y: scroll;
 }
 
-#page-wrap {
+.page-wrap {
   min-height: 100%;
   margin-bottom: -@footer-height - @footer-margin;
 
@@ -225,15 +238,7 @@ a {
 }
 
 .feature {
-  border-right: 1px solid #eee;
-  margin-right: @grid-gutter-width / -2;
-  padding-right: @grid-gutter-width / 2;
-  text-align: center;
-  margin-bottom: 20px;
-
-  div:last-child > & {
-    border-right: none;
-  }
+  .divided-columns();
 
   .icon {
     background: @brand-primary;
@@ -253,7 +258,7 @@ a {
 
 footer {
   line-height: @footer-height;
-  border-top: 3px solid #eee;
+  box-shadow: inset 0 -3px #eee;
   color: #bbb;
   background: url('../img/logo-footer.png') center center no-repeat #f0f0f0;
   margin-top: @footer-margin;
@@ -403,7 +408,7 @@ footer {
   }
 }
 
-#page-title {
+.page-title {
   margin: 0 0 @arrow-height * 1.25;
   text-align: center;
   line-height: 1.4em;
@@ -435,15 +440,7 @@ footer {
 
 
 .plan {
-  border-right: 1px solid #eee;
-  margin-right: @grid-gutter-width / -2;
-  padding-right: @grid-gutter-width / 2;
-  text-align: center;
-  margin-bottom: 20px;
-
-  div:last-child > & {
-    border-right: none;
-  }
+  .divided-columns();
 
   img {
     width: 33%;
@@ -517,5 +514,50 @@ footer {
     font-size: 2.5em;
     font-family: @headings-font-family;
     font-weight: 200;
+  }
+}
+
+.team {
+  .divided-columns();
+
+  small {
+    display: block;
+  }
+
+  .profile {
+    position: relative;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #eee;
+    text-align: center;
+    margin: 0 auto;
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: fadeout(darken(@brand-primary, 20%), 25%);
+      color: #fff;
+      font-size: 18px;
+      opacity: 0;
+      border-radius: 50%;
+      .transition(0.3s);
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    .icon {
+      font-size: 32px;
+      display: block;
+      margin: 40px 0 5px;
+    }
   }
 }
