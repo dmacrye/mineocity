@@ -1,0 +1,213 @@
+table.detail-view .null
+{
+    color: pink;
+}
+
+table.detail-view
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+}
+
+table.detail-view label
+{
+    font-weight: normal;
+}
+
+table.detail-view th, table.detail-view td
+{
+    font-size: 0.9em;
+    padding: 10px;
+    vertical-align: middle;
+    overflow: visible;
+    width: 20%;
+}
+
+table.detail-view th
+{
+    vertical-align: middle;
+    font-weight: normal;
+    width: 40%;
+    height: 32px;
+}
+table.detail-view tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table.detail-view tr.even
+{
+    background: #eee;
+}
+
+table.detail-view tr.odd th
+{
+}
+
+table.detail-view tr.even th
+{
+}
+
+table.detail-view tr:last-child
+{
+    border-bottom: 0px;
+}
+
+table.detail-view tr.linerow
+{
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+table.detail-view tr.titlerow
+{
+    padding: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    border-bottom: 1px solid #aaa;
+}
+
+table.detail-view tr.titlerow th
+{
+    padding: 4px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+table.detail-view .hintRow
+{
+    width: 40%;
+}
+
+table.detail-view .hint
+{
+    position: relative;
+    height: 22px;
+}
+table.detail-view .hintIcon
+{
+    position: absolute;
+    top: 3px;
+}
+table.detail-view .hintText
+{
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    border: 1px solid #FFD324;
+    padding: 6px 6px;
+    background-color: #FFF6BF;
+    z-index: 1;
+}
+
+/*Embedded forms*/
+
+table.detail-view input
+{
+    width: 185px;
+}
+
+table.detail-view select
+{
+    min-width: 190px;
+    color: #555;
+    border: 1px solid #aaa;
+    padding: 3px;
+    background-image: url("../images/inputfield.png");
+    border-radius: 2px;
+    box-shadow: 0px 1px 2px #DDDDDD;
+
+}
+table.detail-view input[type="text"]
+{ 
+    width: 180px;
+    color: #555;
+    border: 1px solid #aaa;
+    padding: 3px;
+    background-image: url("../images/inputfield.png");
+    border-radius: 2px;
+    box-shadow: 0px 1px 2px #DDDDDD;
+}
+
+table.detail-view  input[type="checkbox"]
+{ 
+    width: auto;
+}
+
+table.detail-view fieldset
+{
+    border: 1px solid #DDD;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    -moz-border-radius:7px;
+}
+
+table.detail-view .note
+{
+    font-style: italic;
+}
+
+table.detail-view span.required
+{
+    color: #FF6666;
+}
+
+table.detail-view div.error label,
+table.detail-view label.error,
+table.detail-view span.error
+{
+    color: #C00;
+}
+
+table.detail-view div.error input,
+table.detail-view div.error textarea,
+table.detail-view div.error select,
+table.detail-view input.error,
+table.detail-view textarea.error,
+table.detail-view select.error
+{
+    background: #FEE;
+    border-color: #C00;
+}
+
+table.detail-view div.success input,
+table.detail-view div.success textarea,
+table.detail-view div.success select,
+table.detail-view input.success,
+table.detail-view textarea.success,
+table.detail-view select.success
+{
+    background: #E6EFC2;
+    border-color: #C6D880;
+}
+
+
+.errorSummary
+{
+    border: 2px solid #C00;
+    padding: 7px 7px 12px 7px;
+    margin: 0 0 20px 0;
+    background: #FEE;
+    font-size: 0.9em;
+}
+
+table.detail-view .errorMessage
+{
+    color: red;
+    font-size: 0.9em;
+}
+
+table.detail-view .errorSummary p
+{
+    margin: 0;
+    padding: 5px;
+}
+
+table.detail-view .errorSummary ul
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+}
