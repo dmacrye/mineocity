@@ -189,6 +189,16 @@ a {
       }
     }
   }
+
+  &.navbar-center {
+    float: none;
+    text-align: center;
+
+    > li {
+      display: inline-block;
+      float: none;
+    }
+  }
 }
 
 .row-dark .navbar {
@@ -199,6 +209,7 @@ a {
       > a {
         background: #fefefe;
         border: 1px solid #eee;
+        margin: 0 5px;
 
         &:hover {
           background: @brand-primary;

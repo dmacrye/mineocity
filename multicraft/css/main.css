@@ -1,0 +1,352 @@
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+    padding:.8em;
+    margin-bottom:1em;
+    border:2px solid #ddd;
+}
+
+div.flash-error
+{
+    background:#FBE3E4;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+    background:#FFF6BF;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success
+{
+    background:#E6EFC2;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a
+{
+    color:#8a1f11;
+}
+
+div.flash-notice a
+{
+    color:#514721;
+}
+
+div.flash-success a
+{
+    color:#264409;
+}
+
+div.form .rememberMe label
+{
+    display: inline;
+}
+
+div.view
+{
+    height: 35px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+
+    background-image: -webkit-linear-gradient(left, #fff, #f7f7f7); // Safari 5.1-6, Chrome 10+
+    background-image:  linear-gradient(to right, #fff, #f7f7f7); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(#fff),argb(#f7f7f7))); // IE9 and down
+
+}
+div.view a
+{
+    font: 12px Arial;
+    padding: 0px;
+    text-decoration: none;
+}
+
+div.view a:hover
+{
+    text-decoration: underline;
+}
+
+div.breadcrumbs
+{
+    font-size: 0.9em;
+    padding: 5px 20px;
+    padding-bottom: 0px;
+}
+
+div.breadcrumbs span
+{
+    font-weight: bold;
+}
+
+div.search-form
+{
+    padding: 10px;
+    margin: 10px 0;
+    background: #eee;
+}
+.portlet-title {
+    padding: 5px;
+    font-family: "raleway";
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #666;
+}
+.portlet li {
+    position: relative;
+}
+.portlet li i {
+    width: 1em;
+    text-align: center;
+}
+
+.portlet-content:after {
+    position: absolute;
+    width: 94%;
+    height: 80%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    content: "";
+    top: 20%;
+    left: 3%;
+    border-radius: 5% 6% 50% 50%;
+    z-index: -5;
+}
+.portlet-content {
+    background: #fff;
+    position: relative;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.operations
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.operations img
+{
+    padding-right: 6px;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
+.operations li
+{
+    padding-bottom: 0px;
+}
+
+.operations li a:hover {
+    color: #999;
+    background: #eee;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.operations li a {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.operations li a:hover i {
+    color: #999;
+}
+
+.operations li a
+{
+    margin-right: 0px;
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: #666;
+}
+
+
+.leftbox
+{ 
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
+    float: left;
+    display: block;
+    width: 150px;
+    background-color: #f4f4f4;
+}
+
+.rightbox
+{ 
+    margin-top: 9px;
+    position: relative;
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 765px;
+}
+
+.box_title
+{
+    margin: 0px;
+    width: auto;
+    height: 25px;
+    display: block;
+}
+
+.box_title h4
+{
+    padding: 1px 70px 1px 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stdtable
+{
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+}
+
+.stdtable td
+{
+    margin: 0px;
+    padding: 2px;
+}
+
+.stdtable td.textcell
+{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+}
+
+.stdtable td.pricecell
+{
+    text-align: center;
+}
+
+.stdtable td.titlecell
+{
+    padding: 4px;
+    border-bottom: 2px #000000 solid;
+    text-align: left;
+}
+
+.stdtable tr.even td
+{
+    margin: 0px;
+    background-color: #e5e5e5;
+}
+
+.stdtable tr.odd td
+{
+    margin: 0px;
+    background-color: #f4f4f4;
+}
+
+.stdtable tr.green td
+{
+    margin: 0px;
+    background-color: #dae4ec;
+}
+
+.stdtable tr.linerow td
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: #555;
+    height: 1px;
+}
+
+.stdtable tr.titlerow td
+{
+    padding: 4px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.stdtable tr.titlerow td.textcell
+{
+    text-align: left;
+    width: auto;
+}
+
+.stdtable tr.titlerow td.large
+{
+    width: auto;
+}
+
+.stdtable td.titlecell
+{
+    padding: 4px;
+    text-align: left;
+    border-right: 1px #000000 solid;
+}
+
+.stdtable tr td.amount
+{
+    padding-right: 10px;
+    text-align: right
+}
+
+a
+{
+    color: #444444;
+}
+
+.code
+{
+    white-space: pre;
+    overflow: auto;
+    font-family: "Courier New" Courier monospace;
+    margin: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid #555;
+    background-color: #efefef;
+}
+
+.infoBox
+{
+    border: 1px solid grey;
+    padding: 5px;
+    padding-top: 6px;
+    padding-left: 30px;
+    font-size: 11px;
+    background: url("../images/icons/info.png") no-repeat;
+    background-position: 6px 6px;
+}
+
+.logArea
+{
+        border: 1px solid #dfdfdf;
+        background-color: #f4f4f4;
+        height: 400px;
+        width: 100%;
+}
+
+.pluginActionPending
+{
+    float: left;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+div[style="padding: 10px; margin: 10px 20px; font-size: 0.8em; text-align: center; border-top: 1px solid #dfdfdf;"] {
+    display:none;
+}
+
+.portlet li ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.portlet li li {
+    list-style-type: none;
+}
