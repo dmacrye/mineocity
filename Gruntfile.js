@@ -73,7 +73,8 @@ module.exports = function(grunt) {
     imagemin: {
       dist: {
         options: {
-          removeComments: true
+          removeComments: true,
+          optimizationLevel: 1
         },
         files: [{
           expand: true,
@@ -106,6 +107,16 @@ module.exports = function(grunt) {
         tasks: ['htmlmin']
       },
     },
+    php: {
+      spy: {
+        options: {
+          base: 'dist',
+          open: true,
+          keepalive: true,
+          router: 'router.php'
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-concurrent');
@@ -117,8 +128,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-php');
 
   grunt.registerTask('default', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post']);
-  grunt.registerTask('spy', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post', 'concurrent:watch']);
+  grunt.registerTask('spy', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post', 'php', 'concurrent:watch']);
 
 };
