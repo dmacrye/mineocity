@@ -29,7 +29,10 @@ return array(
       array('name' => 'Stone', 'ram' => 3072, 'slots' => 45, 'link' => 103, 'price' => '30.00'),
       array('name' => 'Coal', 'ram' => 4096, 'slots' => 60, 'link' => 104, 'price' => '40.00'),
       array('name' => 'Redstone', 'ram' => 6144, 'slots' => 120, 'link' => 106, 'price' => '60.00'),
-      array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '80.00')
+      array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '80.00'),
+      array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '80.00'),
+      array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '80.00'),
+      array('name' => 'Diamond', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '80.00'),
     )
   ),
   'source' => array(

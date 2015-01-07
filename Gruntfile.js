@@ -113,7 +113,9 @@ module.exports = function(grunt) {
           base: 'dist',
           open: true,
           keepalive: true,
-          router: 'router.php'
+          router: 'router.php',
+          hostname: '0.0.0.0',
+          port: 3000,
         }
       }
     }
