@@ -85,6 +85,9 @@ module.exports = function(grunt) {
       }
     },
     concurrent: {
+      options: {
+        limit: 5,
+      },
       build: ['coffee', 'less', 'imagemin', 'htmlmin', 'copy'],
       postbuild: ['uglify'],
       watch: ['watch:coffee', 'watch:less', 'watch:html', 'php']
