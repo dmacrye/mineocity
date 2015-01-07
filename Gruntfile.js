@@ -87,7 +87,7 @@ module.exports = function(grunt) {
     concurrent: {
       build: ['coffee', 'less', 'imagemin', 'htmlmin', 'copy'],
       postbuild: ['uglify'],
-      watch: ['watch:coffee', 'watch:less', 'watch:html']
+      watch: ['watch:coffee', 'watch:less', 'watch:html', 'php']
     },
     clean: {
       pre: ['dist/css', 'dist/img', 'dist/js', 'dist/pages'],
@@ -131,6 +131,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-php');
 
   grunt.registerTask('default', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post']);
-  grunt.registerTask('spy', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post', 'php', 'concurrent:watch']);
+  grunt.registerTask('spy', ['clean:pre', 'concurrent:build', 'concurrent:postbuild', 'clean:post', 'concurrent:watch']);
 
 };
