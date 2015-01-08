@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {{> head }}
-    <title>Mineocity Hosting | Minecraft Server Hosting Plans</title>
+    <title>Game Server Hosting | Mineocity Hosting</title>
     <meta name="description" content="Premium Source Server Hosting but without the premium price tag.">
   </head>
   <body>
@@ -12,33 +12,30 @@
 
       <div class="row-dark arrow-compact">
         <div class="container feature-large">
-          <h1>Included:</h1>
+          <h1 align="center">Included with All Plans:</h1>
           <div class="row">
-            <ul class="col-md-4 feature-list">
-              <li><i class="icon icon-puzzle3"></i> Automated Plugin Installer</li>
-              <li><i class="icon icon-cube"></i> Free Subdomain</li>
-            </ul>
-            <ul class="col-md-4 feature-list">
-              <li><i class="icon icon-database"></i> Free MySQL Database</li>
-              <li><i class="icon icon-star"></i> Dedicated IP</li>
-            </ul>
-            <ul class="col-md-4 feature-list">
-              <li><i class="icon icon-cloud-download"></i> Full FTP Access</li>
+            <ul class="col-md-4 feature-list" align="center">
               <li><i class="icon icon-stopwatch"></i> Instant Setup</li>
+            </ul>
+            <ul class="col-md-4 feature-list" align="center">
+              <li><i class="icon icon-download"></i> Fast Download Enabled</li>
+            </ul>
+            <ul class="col-md-4 feature-list" align="center">
+              <li><i class="icon icon-cloud-download"></i> Full FTP Access</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          {{> testimonial-short}}
+          <!--{{> testimonial-short}}-->
           {{#source.plans}}
           <div class="col-md-3">
             <div class="plan">
               <img src="{{ baseUri }}/img/source/{{ name }}.png" alt="Source Hosting - {{ name }} Plan" class="bounce">
 
               <div class="item-shadow"></div>
-              <h2>{{ name }} Plan</h2>
+              <h2>{{ name }}</h2>
               <ul>
                 <li class="focus">{{ slots }} Slots</li>
                 <li>{{ additional_slots }} per Additional Slot</li>
@@ -50,7 +47,7 @@
           </div>
           {{/source.plans}}
         </div>
-        <h1>Test Us!
+        <h1 align="center">Test Us!
           <small>Try out these test IPs</small>
         </h1>
         <div class="row source">
