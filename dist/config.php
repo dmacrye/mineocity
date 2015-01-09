@@ -22,14 +22,14 @@ return array(
   ),
   'budget' => array(
     'plans' => array(
-      array('name' => 'Tier 1', 'ram' => 512, 'slots' => 7, 'link' => 100, 'price' => '2.50'),
-      array('name' => 'Tier 2', 'ram' => 1024, 'slots' => 15, 'link' => 101, 'price' => '5.00'),
-      array('name' => 'Tier 3', 'ram' => 1536, 'slots' => 23,  'link' => 109, 'price' => '7.50'),
-      array('name' => 'Tier 4', 'ram' => 2048, 'slots' => 30, 'link' => 102, 'price' => '10.00'),
-      array('name' => 'Tier 5', 'ram' => 3072, 'slots' => 45, 'link' => 103, 'price' => '15.00'),
-      array('name' => 'Tier 6', 'ram' => 4096, 'slots' => 60, 'link' => 104, 'price' => '20.00'),
-      array('name' => 'Tier 7', 'ram' => 6144, 'slots' => 120, 'link' => 106, 'price' => '30.00'),
-      array('name' => 'Tier 8', 'ram' => 8192, 'slots' => 160, 'link' => 108, 'price' => '40.00'),
+      array('name' => 'Tier 1', 'ram' => 512, 'slots' => 7, 'link' => 79, 'price' => '2.50'),
+      array('name' => 'Tier 2', 'ram' => 1024, 'slots' => 15, 'link' => 81, 'price' => '5.00'),
+      array('name' => 'Tier 3', 'ram' => 1536, 'slots' => 23,  'link' => 83, 'price' => '7.50'),
+      array('name' => 'Tier 4', 'ram' => 2048, 'slots' => 30, 'link' => 84, 'price' => '10.00'),
+      array('name' => 'Tier 5', 'ram' => 3072, 'slots' => 45, 'link' => 85, 'price' => '15.00'),
+      array('name' => 'Tier 6', 'ram' => 4096, 'slots' => 60, 'link' => 86, 'price' => '20.00'),
+      array('name' => 'Tier 7', 'ram' => 6144, 'slots' => 120, 'link' => 87, 'price' => '30.00'),
+      array('name' => 'Tier 8', 'ram' => 8192, 'slots' => 160, 'link' => 88, 'price' => '40.00'),
     )
   ),
   'source' => array(
